@@ -1,0 +1,133 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        body{
+            background-color: turquoise;
+        }
+        .flex-container-row{
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+        }
+        .flex-container-col{
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+        .custom-button{
+            background-color: white;
+            border: #CCCCCC 2px solid;
+            height: 70px;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+        .custom-button:hover{
+            border: #FF6100 2px solid;
+            height: 75px;
+
+        }
+        .custom-button-current{
+            background-color:#FF6100;
+            color: white;
+
+        }
+        .base-form-container{
+            height: 500px;
+            width: 50%;
+            padding: 16px;
+            background-color:#FFFCBD;
+        }
+        .hidden{
+            display: none;
+        }
+        .bottom-buttons{
+            position: relative;
+            float: right;
+            height: 30px;
+            width: 75px;
+            margin-left: 20px;
+        }
+    </style>
+    <script src="index.js"> </script>
+</head>
+<body>
+    <h1 align=center>Fill up the form</h1>
+    <hr color=black>
+    <div class="flex-container-row">
+        <div class="flex-container-col">
+            <button class="custom-button custom-button-current" onclick="onButtonSelected(0)">Basic Informations</button>
+            <button class="custom-button" onclick="onButtonSelected(1)">Educational Qualifications</button>
+            <button class="custom-button" onclick="onButtonSelected(2)">Address</button>
+        </div>
+        <div class="flex-container-col" style="width: 100%;">
+
+        <form action="result.html" method="get" target="_blank">
+            <div class="flex-container-col base-form-container" id="container-0">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" value="Please Enter your first name"id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" value="Please Enter your last name"id="lname" name="lname"><br><br>
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" value="<?php echo date('Y-m-d');?>"id="dob" name="dob"><br><br>
+                    <div class="flex-container-outer">
+                        <label for="gender"><b>Gender:</b></label><br/>
+                        <input type="radio" id="gender-male" name="gender" value="male">
+                        <label for="gender-male">Male</label><br>
+                        <input type="radio" id="gender-female" name="gender" value="female">
+                        <label for="gender-female">Female</label><br>
+                        <input type="radio" id="gender-others" name="gender" value="others">
+                        <label for="gender-others">Others</label>
+                    </div>
+            </div>
+            <div class="flex-container-col base-form-container" style="display: none;" id="container-1">
+                Degree: <br/><br/><select name="degree" id="degree">
+                    <option selected>-- Select Group --</option>
+                    <option>BSc</option>
+                    <option>B.Tech</option>
+                    <option>Diploma</option>
+                </select><br>
+                <br>
+            Branch: <br/><br/><select name="branch" id="branch">
+                    <option selected>-- Select Group --</option>
+                    <option>CSE</option>
+                    <option>ECE</option>
+                    <option>CIVIL</option>
+                    <option>EEE</option>
+                </select><br><br>
+            </div>
+            <div class="flex-container-col base-form-container" id="container-2" style="display: none;">
+                <label for="inputStreet">Street: </label> <br/>
+                <input type="street"
+                    class="form-control"
+                    id="inputStreet" name="street"
+                    placeholder="Street">
+                <br/><br/>
+                <label for="inputCity">City: </label> <br/>
+                <input type="city"
+                        class="form-control"
+                        name="city"
+                        id="inputCity"
+                        placeholder="City">
+                        <br/><br/>
+                <label for="inputZip">ZIP: </label> <br/>
+                <input type="zip"
+                        class="form-control"
+                        id="inputZip"
+                        name="zip"
+                        placeholder="Zip">
+            </div>
+
+            <div class="flex-container-row">
+                <button class="bottom-buttons" type="button" onclick="onNextClicked()">Next</button>
+                <input type="submit" class="bottom-buttons"> </input>
+            </form>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
