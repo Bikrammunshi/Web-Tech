@@ -1,0 +1,474 @@
+──(kali㉿kali)-[~]
+└─$ sudo apt update      
+[sudo] password for kali: 
+Hit:1 http://kali.download/kali kali-rolling InRelease                                           
+Hit:2 https://packagecloud.io/AtomEditor/atom/any any InRelease                                 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+1459 packages can be upgraded. Run 'apt list --upgradable' to see them.
+                                                                                                                  
+┌──(kali㉿kali)-[~]
+└─$ cd Desktop 
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop]
+└─$ cd web-tech
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech]
+└─$ ls
+'all html outputs.odp'   assignment2.html   forminputpage.html   'Java prgs'   lab3   lab5   lab7           resume.html
+'all html outputs.pdf'   css.html           formsubmitpage.html   lab1         lab4   lab6   prgth1.class  'WT-Theory assignment 1 form'
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech]
+└─$ mkdir lab9
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech]
+└─$ cd lab9      
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Plastic_Demo.java                           
+
+(gedit:7813): Gtk-WARNING **: 08:42:36.906: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+^C
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac Plastic-Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+error: file not found: Plastic-Demo.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac Plastic_Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Plastic_Demo.java:51: error: incompatible types: Plastic cannot be converted to Sheet
+                Sheet s1=new Plastic();
+                         ^
+Plastic_Demo.java:52: error: incompatible types: Plastic cannot be converted to Box
+                Box b1=new Plastic();
+                       ^
+2 errors
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Plastic_Demo.java
+
+(gedit:10739): Gtk-WARNING **: 08:54:07.818: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+^C
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac Plastic_Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Plastic_Demo.java:51: error: cannot find symbol
+                Plasitc s1=new Sheet();
+                ^
+  symbol:   class Plasitc
+  location: class Plastic_Demo
+1 error
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Plastic_Demo.java
+
+(gedit:10984): Gtk-WARNING **: 08:54:49.968: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac Plastic_Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ java Plastic_Demo.class
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Error: Could not find or load main class Plastic_Demo.class
+Caused by: java.lang.ClassNotFoundException: Plastic_Demo.class
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ java Plastic_Demo      
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Enter the dimensions of a 2D sheet
+3
+4
+Enter the dimensions of a 3D box
+2
+3
+The cost of the plastic sheet is 480.0
+The cost of the plastic sheet is 240.0
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ 4
+4: command not found
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Plastic_Demo.java
+
+(gedit:11321): Gtk-WARNING **: 08:55:57.262: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+^C
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac Plastic_Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ java Plastic_Demo      
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Enter the dimensions of a 2D sheet
+3
+4
+Enter the dimensions of a 3D box
+2
+3
+4
+The cost of the plastic sheet is 480.0
+The cost of the plastic box is 1440.0
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Multilevel_Demo.java
+
+(gedit:11769): Gtk-WARNING **: 08:56:58.283: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+^C
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac Multilevel_Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Multilevel_Demo.java:16: error: cannot find symbol
+                width=w;
+                ^
+  symbol:   variable width
+  location: class Plate
+Multilevel_Demo.java:20: error: cannot find symbol
+                System.out.println("The dimensions of a plate are: \n Length: "+length+"\n Width: "+width);
+                                                                                                    ^
+  symbol:   variable width
+  location: class Plate
+Multilevel_Demo.java:29: error: cannot find symbol
+                width=w;
+                ^
+  symbol:   variable width
+  location: class Box
+Multilevel_Demo.java:34: error: cannot find symbol
+                System.out.println("The dimensions of a box are: \n Length: "+length+"\n Width: "+width+"\n Height: "+height);
+                                                                                                  ^
+  symbol:   variable width
+  location: class Box
+Multilevel_Demo.java:43: error: cannot find symbol
+                width=w;
+                ^
+  symbol:   variable width
+  location: class WoodBox
+Multilevel_Demo.java:49: error: cannot find symbol
+                System.out.println("The dimensions of a box are: \n Length: "+length+"\n Width: "+width+"\n Height: "+height+"\n Thickness: "+thick);
+                                                                                                  ^
+  symbol:   variable width
+  location: class WoodBox
+6 errors
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Multilevel_Demo.java
+
+(gedit:15178): Gtk-WARNING **: 09:10:20.349: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+^C
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac Multilevel_Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ java Multilevel_Demo      
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Enter the length and breadth of a plate
+3
+2
+The dimensions of a plate are: 
+ Length: 3.0
+ Width: 2.0
+Enter the length and breadth and the height of a box
+3
+4
+5
+The dimensions of a box are: 
+ Length: 3.0
+ Width: 4.0
+ Height: 5.0
+Enter the length and breadth and the height and the thickness of a woodbox
+5
+6
+7
+8
+The dimensions of a box are: 
+ Length: 5.0
+ Width: 6.0
+ Height: 7.0
+ Thickness: 8.0
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Dispatch.java       
+
+(gedit:18395): Gtk-WARNING **: 09:21:15.714: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+^C
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac  Dispatch.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ java  Dispatc       
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Error: Could not find or load main class Dispatc
+Caused by: java.lang.ClassNotFoundException: Dispatc
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ java  Dispatc.class
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Error: Could not find or load main class Dispatc.class
+Caused by: java.lang.ClassNotFoundException: Dispatc.class
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ java  Dispatch     
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Inside A's m1 method
+Inside B's m1 method
+Inside C's m1 method
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Shape_Demo.java
+
+(gedit:19134): Gtk-WARNING **: 09:23:36.240: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac Shape_Demp.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+error: file not found: Shape_Demp.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac Shape_Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Shape_Demo.java:50: error: cannot find symbol
+                c1.input();
+                  ^
+  symbol:   method input()
+  location: variable c1 of type Shape
+Shape_Demo.java:51: error: cannot find symbol
+                r1.input();
+                  ^
+  symbol:   method input()
+  location: variable r1 of type Shape
+2 errors
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Shape_Demo.java
+
+(gedit:21418): Gtk-WARNING **: 09:32:49.408: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac Shape_Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Shape_Demo.java:50: error: cannot find symbol
+                c1.input();
+                  ^
+  symbol:   method input()
+  location: variable c1 of type Shape
+Shape_Demo.java:51: error: cannot find symbol
+                r1.input();
+                  ^
+  symbol:   method input()
+  location: variable r1 of type Shape
+2 errors
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Shape_Demo.java
+
+(gedit:21651): Gtk-WARNING **: 09:33:29.432: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+^C
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac Shape_Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ java Shape_Demo      
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Enter the dimensions of a circle: 
+3
+Enter the dimensions of a rectangle: 
+3.9
+4.1
+The area of the circle is 28.285714285714285
+The area of the rectangle is 15.989999999999998
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Account_Demo.java
+
+(gedit:21983): Gtk-WARNING **: 09:34:19.174: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+^C
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac  Account_Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Account_Demo.java:39: error: ']' expected
+                Person p[5];
+                         ^
+1 error
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Account_Demo.java 
+
+(gedit:24370): Gtk-WARNING **: 09:43:44.918: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+^C
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac  Account_Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Account_Demo.java:20: error: cannot find symbol
+                System.out.pritln("Enter the details like name, aadhar no, bank account number, balance: ");
+                          ^
+  symbol:   method pritln(String)
+  location: variable out of type PrintStream
+Account_Demo.java:24: error: cannot find symbol
+                balance=sc.nextDoublw();
+                          ^
+  symbol:   method nextDoublw()
+  location: variable sc of type Scanner
+Account_Demo.java:47: error: cannot find symbol
+                        p[i].display();
+                            ^
+  symbol:   method display()
+  location: class Person
+3 errors
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Account_Demo.java 
+
+(gedit:24533): Gtk-WARNING **: 09:44:14.948: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+^C
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac  Account_Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Account_Demo.java:42: error: variable p might not have been initialized
+                        p[i]=new Person();
+                        ^
+Account_Demo.java:47: error: variable p might not have been initialized
+                        p[i].disp();
+                        ^
+2 errors
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Account_Demo.java 
+
+(gedit:24720): Gtk-WARNING **: 09:46:10.812: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+^C
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac  Account_Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ java  Account_Demo      
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Error: Main method not found in class Account_Demo, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit Account_Demo.java 
+
+(gedit:25526): Gtk-WARNING **: 09:46:58.396: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+^C
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac  Account_Demo.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ java  Account_Demo      
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Enter the details like name, aadhar no, bank account number, balance: 
+asf
+34
+45
+234
+Enter the details like name, aadhar no, bank account number, balance: 
+svfg
+45
+565
+4252
+Enter the details like name, aadhar no, bank account number, balance: 
+vsdg
+3425
+1123
+546
+Enter the details like name, aadhar no, bank account number, balance: 
+bsty
+234
+31
+5435
+Enter the details like name, aadhar no, bank account number, balance: 
+gsty
+3452
+365
+764
+The name of the person is asf
+The aadhar number of the person is 34
+The account number of the bank account is 45
+The balance in the bank account is 234.0
+The name of the person is svfg
+The aadhar number of the person is 45
+The account number of the bank account is 565
+The balance in the bank account is 4252.0
+The name of the person is vsdg
+The aadhar number of the person is 3425
+The account number of the bank account is 1123
+The balance in the bank account is 546.0
+The name of the person is bsty
+The aadhar number of the person is 234
+The account number of the bank account is 31
+The balance in the bank account is 5435.0
+The name of the person is gsty
+The aadhar number of the person is 3452
+The account number of the bank account is 365
+The balance in the bank account is 764.0
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit paramtereized.java
+
+(gedit:26937): Gtk-WARNING **: 09:51:13.533: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac  paramtereized.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+paramtereized.java:21: error: class parameterized is public, should be declared in a file named parameterized.java
+public class parameterized
+       ^
+1 error
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit paramtereized.java 
+
+(gedit:27648): Gtk-WARNING **: 09:53:53.561: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac  paramtereized.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+paramtereized.java:21: error: class parametereized is public, should be declared in a file named parametereized.java
+public class parametereized
+       ^
+1 error
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ gedit paramtereized.java 
+
+(gedit:27765): Gtk-WARNING **: 09:54:10.213: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+^C
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ javac  paramtereized.java
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ java  paramtereized      
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Parent class called
+calling parent with child
+                                                                                                                                                             
+┌──(kali㉿kali)-[~/Desktop/web-tech/lab9]
+└─$ 
